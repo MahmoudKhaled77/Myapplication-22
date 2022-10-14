@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <string name="button_text">Hello Button</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="username">User Name</string>
+    <string name="calls">Calls</string>
+    <string name="CHAT">Chat</string>
+    <string name="status">Status</string>
+    <string name="STATUS">STATUS</string>
+    <string name="CALL">CALL</string>
+    <string name="WhatsApp">  WhatsApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
