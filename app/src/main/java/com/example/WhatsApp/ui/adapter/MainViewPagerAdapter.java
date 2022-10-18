@@ -14,34 +14,29 @@ import com.example.WhatsApp.ui.StatusFragmint;
 
 import java.util.ArrayList;
 
-public class MainViewPagerAdapter extends FragmentStatePagerAdapter {
+public class MainViewPagerAdapter extends FragmentStateAdapter {
     ArrayList<Fragment>fragmentList=new ArrayList<>();
-    ArrayList<String>titleslist=new ArrayList<>();
 
 
-    public MainViewPagerAdapter(@NonNull FragmentManager fm) {
-        super(fm);
+    public MainViewPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
+        super(fragmentManager, lifecycle);
     }
 
-    public void addFragmint(Fragment fragment,String title){
+
+    public void addFragmint(Fragment fragment){
         fragmentList.add(fragment);
-        titleslist.add(title);
     }
+
+
 
     @NonNull
     @Override
-    public Fragment getItem(int position) {
+    public Fragment createFragment(int position) {
         return fragmentList.get(position);
     }
 
     @Override
-    public int getCount() {
+    public int getItemCount() {
         return fragmentList.size();
-    }
-
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return titleslist.get(position);
     }
 }

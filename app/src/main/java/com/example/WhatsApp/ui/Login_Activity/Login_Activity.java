@@ -30,7 +30,7 @@ public class Login_Activity extends AppCompatActivity {
     private EditText Username, Password;
     private Button btn_login;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
